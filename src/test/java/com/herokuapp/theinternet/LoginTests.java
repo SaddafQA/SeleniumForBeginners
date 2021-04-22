@@ -21,7 +21,7 @@ public class LoginTests {
 		driver = new ChromeDriver();
 
 		// adding sleep for 3 sec
-		sleep(1000);
+		sleep(3000);
 
 		// Maximize Browser window
 		driver.manage().window().maximize();
