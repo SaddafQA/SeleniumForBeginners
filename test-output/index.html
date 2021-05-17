@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-NegativeTestSuite" title="com.herokuapp.theinternet.LoginTests" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NegativeTestSuite" title="com.herokuapp.theinternet.LoginTests" class="method navigator-link" hash-for-method="negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!)">negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-NegativeTestSuite -->
@@ -122,6 +117,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-NegativeTestSuite" title="com.herokuapp.theinternet.LoginTests" class="method navigator-link" hash-for-method="negativeLoginTest(incorrectUsername, SuperSecretPassword!, Your username is invalid!)">negativeLoginTest(incorrectUsername, SuperSecretPassword!, Your username is invalid!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NegativeTestSuite" title="com.herokuapp.theinternet.LoginTests" class="method navigator-link" hash-for-method="negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!)">negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-NegativeTestSuite -->
@@ -147,40 +147,13 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 298.680
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=90.0.4430.93)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NB-SFA&apos;, ip: &apos;192.168.10.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+System info: host: &apos;NB-SFA&apos;, ip: &apos;192.168.8.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sfa\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1fb13aa31bcfb802554a2d524b7fa758
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.herokuapp.theinternet.LoginTests.loginTest(LoginTests.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!)">
-                  </a> <!-- negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!) -->
-                  <span class="method-name">negativeLoginTest</span>
-                  <span class="parameters">(tomsmith, incorrectPassword!, Your password is invalid!)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=90.0.4430.93)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NB-SFA&apos;, ip: &apos;192.168.10.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sfa\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52812}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b30c0263e03b940fd754fdae2fc8b3ff
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sfa\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 48e81eccf1473803d6c7e52535103f06
 *** Element info: {Using=id, value=username}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -192,7 +165,10 @@ Session ID: b30c0263e03b940fd754fdae2fc8b3ff
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
 	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.herokuapp.theinternet.LoginTests.negativeLoginTest(LoginTests.java:87)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.herokuapp.theinternet.LoginTests.loginTest(LoginTests.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -212,6 +188,14 @@ Session ID: b30c0263e03b940fd754fdae2fc8b3ff
                   </a> <!-- negativeLoginTest(incorrectUsername, SuperSecretPassword!, Your username is invalid!) -->
                   <span class="method-name">negativeLoginTest</span>
                   <span class="parameters">(incorrectUsername, SuperSecretPassword!, Your username is invalid!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!)">
+                  </a> <!-- negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!) -->
+                  <span class="method-name">negativeLoginTest</span>
+                  <span class="parameters">(tomsmith, incorrectPassword!, Your password is invalid!)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -335,20 +319,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.herokuapp.theinternet.LoginTests')
-data.setCell(0, 3, 300063);
+data.setCell(0, 3, 33705);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'negativeLoginTest')
 data.setCell(1, 2, 'com.herokuapp.theinternet.LoginTests')
-data.setCell(1, 3, 113452);
+data.setCell(1, 3, 7845);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'negativeLoginTest')
 data.setCell(2, 2, 'com.herokuapp.theinternet.LoginTests')
-data.setCell(2, 3, 86995);
+data.setCell(2, 3, 7709);
 window.suiteTableData['NegativeTestSuite']= { tableData: data, tableDiv: 'times-div-NegativeTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-NegativeTestSuite">
               </div> <!-- times-div-NegativeTestSuite -->
             </div> <!-- times-div -->
@@ -394,37 +378,35 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">4339 ms</span>
+                <span class="method-start">5973 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">304423 ms</span>
+                <span class="method-start">39803 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">305431 ms</span>
+                <span class="method-start">40630 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">negativeLoginTest(incorrectUsername, SuperSecretPassword!, Your username is invalid!)</span>
-                <span class="method-start">308569 ms</span>
+                <span class="method-start">45828 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">395567 ms</span>
+                <span class="method-start">53540 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">396446 ms</span>
+                <span class="method-start">54760 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">negativeLoginTest(tomsmith, incorrectPassword!, Your password is invalid!)</span>
-                <span class="method-start">399506 ms</span>
+                <span class="method-start">59778 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">512964 ms</span>
+                <span class="method-start">67624 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

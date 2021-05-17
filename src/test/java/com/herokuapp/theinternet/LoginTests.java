@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
@@ -23,10 +25,10 @@ public class LoginTests {
 		driver = new ChromeDriver();
 
 		// adding sleep for 3 sec
-		sleep(1000);
+		sleep(3000);
 
 		// Maximize Browser window
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();	
 
 	}
 
@@ -41,6 +43,10 @@ public class LoginTests {
 		driver.get(url);
 		System.out.println("Page is open");
 
+		WebDriverWait myDynamicElement = new WebDriverWait(driver, 30);
+        myDynamicElement.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
+		
+		
 		sleep(1000);
 		WebElement username = driver.findElement(By.id("username"));
 		username.sendKeys("tomsmith");
