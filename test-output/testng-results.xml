@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="6" passed="2" failed="1" skipped="0">
+<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-17T11:06:44 PKT" name="NegativeTestSuite" finished-at="2021-05-17T11:07:53 PKT" duration-ms="68445">
+  <suite started-at="2021-05-23T19:34:36 PKT" name="NegativeTestSuite" finished-at="2021-05-23T19:35:50 PKT" duration-ms="74004">
     <groups>
       <group name="positiveTests">
         <method signature="LoginTests.loginTest()[pri:1, instance:com.herokuapp.theinternet.LoginTests@c03cf28]" name="loginTest" class="com.herokuapp.theinternet.LoginTests"/>
@@ -17,98 +17,29 @@
         <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.herokuapp.theinternet.LoginTests@2abf4075]" name="negativeLoginTest" class="com.herokuapp.theinternet.LoginTests"/>
       </group> <!-- negativeTests -->
     </groups>
-    <test started-at="2021-05-17T11:06:44 PKT" name="PositiveTests" finished-at="2021-05-17T11:07:25 PKT" duration-ms="40501">
+    <test started-at="2021-05-23T19:34:36 PKT" name="PositiveTests" finished-at="2021-05-23T19:35:08 PKT" duration-ms="31795">
       <class name="com.herokuapp.theinternet.LoginTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.herokuapp.theinternet.LoginTests@c03cf28]" started-at="2021-05-17T11:06:44 PKT" name="setup" finished-at="2021-05-17T11:06:50 PKT" duration-ms="5967" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.herokuapp.theinternet.LoginTests@c03cf28]" started-at="2021-05-23T19:34:36 PKT" name="setup" finished-at="2021-05-23T19:34:42 PKT" duration-ms="6331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:1, instance:com.herokuapp.theinternet.LoginTests@c03cf28]" started-at="2021-05-17T11:06:50 PKT" name="loginTest" finished-at="2021-05-17T11:07:24 PKT" duration-ms="33705" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=90.0.4430.93)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NB-SFA', ip: '192.168.8.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sfa\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 48e81eccf1473803d6c7e52535103f06
-*** Element info: {Using=id, value=username}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=90.0.4430.93)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NB-SFA', ip: '192.168.8.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sfa\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 48e81eccf1473803d6c7e52535103f06
-*** Element info: {Using=id, value=username}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.herokuapp.theinternet.LoginTests.loginTest(LoginTests.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="loginTest()[pri:1, instance:com.herokuapp.theinternet.LoginTests@c03cf28]" started-at="2021-05-23T19:34:42 PKT" name="loginTest" finished-at="2021-05-23T19:35:07 PKT" duration-ms="24477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.LoginTests@c03cf28]" started-at="2021-05-17T11:07:24 PKT" name="tearDown" finished-at="2021-05-17T11:07:25 PKT" duration-ms="652" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.LoginTests@c03cf28]" started-at="2021-05-23T19:35:07 PKT" name="tearDown" finished-at="2021-05-23T19:35:08 PKT" duration-ms="895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.herokuapp.theinternet.LoginTests -->
     </test> <!-- PositiveTests -->
-    <test started-at="2021-05-17T11:07:25 PKT" name="NegativeUsernameTests" finished-at="2021-05-17T11:07:39 PKT" duration-ms="14114">
+    <test started-at="2021-05-23T19:35:08 PKT" name="NegativeUsernameTests" finished-at="2021-05-23T19:35:26 PKT" duration-ms="18332">
       <class name="com.herokuapp.theinternet.LoginTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.herokuapp.theinternet.LoginTests@1649b0e6]" started-at="2021-05-17T11:07:25 PKT" name="setup" finished-at="2021-05-17T11:07:30 PKT" duration-ms="5198" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.herokuapp.theinternet.LoginTests@1649b0e6]" started-at="2021-05-23T19:35:08 PKT" name="setup" finished-at="2021-05-23T19:35:13 PKT" duration-ms="5079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.herokuapp.theinternet.LoginTests@1649b0e6]" started-at="2021-05-17T11:07:30 PKT" name="negativeLoginTest" finished-at="2021-05-17T11:07:38 PKT" duration-ms="7709" status="PASS">
+        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.herokuapp.theinternet.LoginTests@1649b0e6]" started-at="2021-05-23T19:35:13 PKT" name="negativeLoginTest" finished-at="2021-05-23T19:35:25 PKT" duration-ms="12468" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,19 +60,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- negativeLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.LoginTests@1649b0e6]" started-at="2021-05-17T11:07:38 PKT" name="tearDown" finished-at="2021-05-17T11:07:39 PKT" duration-ms="1196" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.LoginTests@1649b0e6]" started-at="2021-05-23T19:35:25 PKT" name="tearDown" finished-at="2021-05-23T19:35:26 PKT" duration-ms="768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.herokuapp.theinternet.LoginTests -->
     </test> <!-- NegativeUsernameTests -->
-    <test started-at="2021-05-17T11:07:39 PKT" name="NegativePasswordTests" finished-at="2021-05-17T11:07:53 PKT" duration-ms="13647">
+    <test started-at="2021-05-23T19:35:26 PKT" name="NegativePasswordTests" finished-at="2021-05-23T19:35:50 PKT" duration-ms="23709">
       <class name="com.herokuapp.theinternet.LoginTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.herokuapp.theinternet.LoginTests@2abf4075]" started-at="2021-05-17T11:07:39 PKT" name="setup" finished-at="2021-05-17T11:07:44 PKT" duration-ms="5017" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.herokuapp.theinternet.LoginTests@2abf4075]" started-at="2021-05-23T19:35:26 PKT" name="setup" finished-at="2021-05-23T19:35:31 PKT" duration-ms="5027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.herokuapp.theinternet.LoginTests@2abf4075]" started-at="2021-05-17T11:07:44 PKT" name="negativeLoginTest" finished-at="2021-05-17T11:07:52 PKT" duration-ms="7845" status="PASS">
+        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.herokuapp.theinternet.LoginTests@2abf4075]" started-at="2021-05-23T19:35:31 PKT" name="negativeLoginTest" finished-at="2021-05-23T19:35:49 PKT" duration-ms="17906" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,7 +93,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- negativeLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.LoginTests@2abf4075]" started-at="2021-05-17T11:07:52 PKT" name="tearDown" finished-at="2021-05-17T11:07:53 PKT" duration-ms="779" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.LoginTests@2abf4075]" started-at="2021-05-23T19:35:49 PKT" name="tearDown" finished-at="2021-05-23T19:35:50 PKT" duration-ms="770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
